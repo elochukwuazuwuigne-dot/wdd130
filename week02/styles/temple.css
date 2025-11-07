@@ -1,43 +1,107 @@
-
+/* General Reset */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 img {
-    width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-header, 
-main, 
+
+/* Page Layout */
+header,
+main,
 footer {
-    max-width: 800px
-    margin 0 auto
+  max-width: 800px;
+  margin: 0 auto;
 }
+
+/* Header */
 header {
-    background-color: #333333;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    font-size: 1.5rem;
+  background-color: #333333;
+  color: white;
+  padding: 1em;
+  text-align: center;
 }
+
+/* Navigation */
+nav {
+  background-color: #555;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #777;
+}
+
+/* Main Section */
 main {
-    width: 400px;
-    margin: 0 auto;
+  max-width: 840px;
+  margin: 0 auto;
 }
+
 h1 {
-    text-align: center;
+  color: #333;
+  text-align: center;
 }
+
+/* Main Image */
+main img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  padding: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
 section {
-    margin: 2em 0;
-    background-color: #dddddd;
-    padding: 1em;
+  margin: 2em 0;
+  background-color: #dddddd;
+  padding: 1em;
 }
-section h2{
-    text-align: left;
-    border-bottom: solid #000 1px;
+
+section h2 {
+  text-align: left;
+  border-bottom: solid #000 1px;
 }
+
+/* Aside */
+aside {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Paragraphs */
+p {
+  padding: 0;
+}
+
+/* Footer */
 footer {
-    background-color: #333333;
-    padding: 1em;
-    text-align: center;
-    column-rule: #fff;
+  background-color: #333333;
+  color: white;
+  padding: 1em;
+  margin-top: 20px;
+  border-top: 2px solid #666;
+  text-align: center;
 }
