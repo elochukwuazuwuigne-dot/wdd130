@@ -1,37 +1,67 @@
-nav {
-  background-color: steelblue;
-  padding: 10px;
+/* Global reset and image sizing */
+* {
+  box-sizing: border-box;
 }
 
-nav a {
-  color: white;
-  padding: 10px;
-  display: block;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-main {
+/* General layout */
+header, main, footer {
   max-width: 800px;
   margin: 0 auto;
 }
 
-h1 {
-  color: #333;
+/* Header styling */
+header {
+  background-color: #333333;
+  color: white;
+  padding: 1em;
+  text-align: center;
 }
 
+/* Navigation bar */
+nav {
+  background-color: #333;     /* Dark background */
+  padding: 10px;              /* Space inside the nav bar */
+}
+
+nav a {
+  color: white;               /* White text links */
+  padding: 10px;              /* Space around each link */
+  display: block;             /* Makes each link a block for easy clicking */
+  text-decoration: none;      /* Removes underline */
+}
+
+/* Main section */
+main {
+  max-width: 800px;           /* Restrict width for readability */
+  margin: 20px auto;          /* Center the main content */
+}
+
+/* Main heading */
+h1 {
+  color: #333;                /* Dark gray text color */
+}
+
+/* Main image */
 main img {
-  width: 100%;
+  width: 150px;
   height: auto;
   border: 2px solid #ccc;
   padding: 5px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
+/* Aside section */
 aside {
-  width: 300px;
+  width: 250px;
   margin: 20px auto;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   padding: 10px;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   color: #333;
 }
 
@@ -40,13 +70,22 @@ aside img {
   height: auto;
 }
 
+/* Paragraphs */
 p {
   padding: 0;
 }
 
+/* Footer */
 footer {
   margin-top: 20px;
   border-top: 2px solid #ccc;
   text-align: center;
+}
+
+/* Footer paragraph styling */
+footer p {
+  color: #666;
+  font-size: 0.9em;
+  padding: 10px 0;
 }
 
