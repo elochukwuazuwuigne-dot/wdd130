@@ -2,36 +2,16 @@
 * {
   box-sizing: border-box;
 }
-nav{
-  background-color: steelblue;
-  padding: 1rem;
-}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Page Layout */
-header,
-main,
-footer {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Header */
-header {
-  background-color: #333333;
-  color: white;
-  padding: 1em;
-  text-align: center;
-}
-
 /* Navigation */
 nav {
-  background-color: #555;
-  padding: 10px;
-  text-align: center;
+  background-color: steelblue;
+  padding: 1rem;
 }
 
 nav a {
@@ -51,6 +31,7 @@ main {
   margin: 0 auto;
 }
 
+/* Headings */
 h1 {
   color: #333;
   text-align: center;
@@ -63,18 +44,6 @@ main img {
   border: 2px solid #ccc;
   padding: 5px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Sections */
-section {
-  margin: 2em 0;
-  background-color: #dddddd;
-  padding: 1em;
-}
-
-section h2 {
-  text-align: left;
-  border-bottom: solid #000 1px;
 }
 
 /* Aside */
@@ -101,7 +70,7 @@ p {
 
 /* Footer */
 footer {
-  background-color: #333333;
+  background-color: #333;
   color: white;
   padding: 1em;
   margin-top: 20px;
