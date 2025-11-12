@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    max-width: 640px;
+}
+
+aside {
+    width: 300px;
+    margin: 10px 0;
+    position: relative;
+}
+
+aside img{
+    width: 100%;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3rem;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    float: right;
+}
+
+p {
+    padding: 0;
+}
+
+
+
+/* ----------------- Class Selectors------------------- */
+
+.box {
+    border: 1px solid #b71234;
+    padding: 1rem;
+    margin: 10px 0;
+    background-color: #cccaca;
+    color: #1a044e;
+    margin: 1rem;
+}
