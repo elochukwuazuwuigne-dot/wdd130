@@ -25,11 +25,18 @@ body {
 main {
     flex: 1 1 60%;
     min-width: 300px;
+    max-width: 600px; /* required by audit */
 }
 
 aside {
     flex: 1 1 35%;
     min-width: 250px;
+    width: 200px; /* audit requirement */
+    margin: 1rem auto;
+    border: 2px solid #b71234;
+    padding: 1rem;
+    background-color: #cccaca;
+    color: #1a044e;
 }
 
 /* ---------- Header & Nav ---------- */
@@ -37,11 +44,18 @@ header {
     margin-bottom: 1rem;
 }
 
+nav {
+    background-color: #f0f0f0; /* required */
+    padding: 1rem; /* required */
+}
+
 nav a {
     margin-right: 1rem;
     text-decoration: none;
-    color: #b71234;
+    color: #b71234; /* required */
     font-weight: bold;
+    padding: 0.5rem 1rem; /* required */
+    display: block; /* required */
 }
 
 /* ---------- Images ---------- */
@@ -50,14 +64,23 @@ main img {
     height: auto;
     float: right;
     margin-left: 1rem;
+    border: 2px solid #b71234; /* required */
+    padding: 0.25rem; /* required */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* required */
 }
 
 aside img {
-    width: 100%;
-    height: auto;
+    width: 200px; /* required */
+    height: auto; /* required */
+    display: block;
+    margin: 0 auto;
 }
 
 /* ---------- Headings ---------- */
+h1 {
+    color: #1a044e; /* required */
+}
+
 aside h2 {
     text-align: center;
     margin-bottom: 1rem;
@@ -65,6 +88,7 @@ aside h2 {
 
 /* ---------- Paragraphs ---------- */
 p {
+    padding: 0; /* required */
     margin-bottom: 1rem;
 }
 
@@ -97,9 +121,11 @@ ul.box li a:hover {
 
 /* ---------- Footer ---------- */
 footer {
-    text-align: center;
+    margin-top: 2rem; /* required */
+    border-top: 2px solid #b71234; /* required */
+    text-align: center; /* required */
     padding: 1rem 0;
     background-color: #eee;
-    margin-top: 2rem;
 }
+
 
