@@ -1,82 +1,105 @@
-/* ===== Navigation ===== */
-nav {
-    background-color: #333333;
-    padding: 10px;
+/* ---------- Global Styles ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #1a044e;
+}
+
+/* ---------- Layout ---------- */
+.container {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    flex: 1 1 60%;
+    min-width: 300px;
+}
+
+aside {
+    flex: 1 1 35%;
+    min-width: 250px;
+}
+
+/* ---------- Header & Nav ---------- */
+header {
+    margin-bottom: 1rem;
 }
 
 nav a {
-    color: white;
-    padding: 10px;
-    display: block;
+    margin-right: 1rem;
     text-decoration: none;
+    color: #b71234;
+    font-weight: bold;
 }
 
-nav a:hover {
-    background-color: #444444;
-}
-
-/* ===== Main Content ===== */
-main {
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-h1 {
-    color: #333333;
-    text-align: center;
-}
-
-h2, h3 {
-    color: #444444;
-}
-
+/* ---------- Images ---------- */
 main img {
-    width: 300px;
+    width: 150px;
     height: auto;
-    border: 2px solid #333333;
-    padding: 5px;
-    box-shadow: 3px 3px 5px #888888;
-    display: block;
-    margin: 10px auto;
-}
-
-/* ===== Aside Section ===== */
-aside {
-    width: 250px;
-    margin: 20px auto;
-    border: 1px solid #333333;
-    padding: 10px;
-    background-color: #f0f0f0;
-    color: #333333;
+    float: right;
+    margin-left: 1rem;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
-    display: block;
-    margin-bottom: 10px;
 }
 
-/* ===== Paragraphs ===== */
-p {
-    padding: 0;
-    line-height: 1.5;
-}
-
-/* ===== Footer ===== */
-footer {
-    margin-top: 20px;
-    border-top: 1px solid #333333;
+/* ---------- Headings ---------- */
+aside h2 {
     text-align: center;
-    padding-top: 10px;
+    margin-bottom: 1rem;
+}
+
+/* ---------- Paragraphs ---------- */
+p {
+    margin-bottom: 1rem;
+}
+
+/* ---------- Boxes ---------- */
+.box {
+    border: 1px solid #b71234;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #cccaca;
+}
+
+/* ---------- Lists ---------- */
+ul.box {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.box li {
+    margin-bottom: 0.5rem;
+}
+
+ul.box li a {
+    color: #1a044e;
+    text-decoration: none;
+}
+
+ul.box li a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #eee;
+    margin-top: 2rem;
 }
 
