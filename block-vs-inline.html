@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise: Block vs. Inline Elements</title>
+    <link rel="stylesheet" href="styles/block-vs-inline.css">
+</head>
+
+<body>
+    <main>
+        <h1>Exercise: Block vs. Inline Elements</h1>
+        <p class="note">Some basic styling has been applied in order to illustrate the elements structure and
+            boundaries.</p>
+
+        <!-- Task 1 -->
+        <h2>Task 1: Swap Block and Inline Elements</h2>
+        <span>In the HTML of this document, change this div element to a span element.</span>
+        <p class="question">What happens to the layout? Does it still take up the full width?</p>
+        <div class="answer">
+            <p>Answer: The span element is inline, so it no longer takes up the full width. It only occupies the width
+                of its content, unlike a div which is block and stretches across the container.</p>
+        </div>
+
+        <!-- Task 2 -->
+        <h2>Task 2: Nesting Inline in Block</h2>
+        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element</span>;</p>
+        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe
+            how it flows within the line.</p>
+        <div class="answer">
+            <p>This is a <span>span element</span> and here is an <em>emphasized text</em> and a <strong>strong
+                    text</strong>. Inline elements flow within the line of the paragraph and do not start on a new line.
+            </p>
+        </div>
+
+        <!-- Task 3 -->
+        <h2>Task 3: Nesting Block in Inline</h2>
+        <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.</span>
+        <p class="question">What error or layout issue do you see? Why does this happen?</p>
+        <div class="answer">
+            <p>Answer: Placing a block element like &lt;div&gt; inside an inline element like &lt;span&gt; is invalid
+                HTML. Browsers may automatically close the &lt;span&gt; before the &lt;div&gt; or move it outside.
+                Inline elements cannot contain block-level elements.</p>
+        </div>
+
+        <!-- Task 4 -->
+        <h2>Task 4: Review Inline Elements</h2>
+        <p>&lt;img&gt; element:</p>
+        <img src="images/castle.webp" alt="placeholder image (images are inline)">
+        <p>&lt;a&gt; anchor element: <a href="https://churchofjesuschrist.org">&lt;a&gt; link</a></p>
+        <p>&lt;button&gt; element: <button type="button">&lt;button&gt; element</button></p>
+    </main>
+</body>
+
+</html>
+
+</html>
