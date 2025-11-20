@@ -24,7 +24,7 @@ body {
 
 /* Header */
 header {
-  background-color: var(--secondary-color); /* deep blue header */
+  background-color: var(--secondary-color);
   color: white;
   padding: 1rem;
   display: flex;
@@ -49,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--accent-color); /* orange accent on hover */
+  color: var(--accent-color);
 }
 
 /* Hero Section */
@@ -70,7 +70,7 @@ nav ul li a:hover {
   left: 10%;
   color: #fff;
   font-size: 3rem;
-  text-shadow: 3px 3px 5px var(--highlight-color); /* subtle red shadow */
+  text-shadow: 3px 3px 5px var(--highlight-color);
 }
 
 .hero article {
@@ -95,56 +95,54 @@ nav ul li a:hover {
   margin-left: 1rem;
 }
 
-/* History and Adventure Sections */
+/* Sections */
 section {
   padding: 2rem 10%;
 }
 
 section h2 {
   margin-bottom: 1rem;
-  color: var(--accent-color); /* orange headings */
+  color: var(--accent-color);
 }
 
 /* Figures in Adventure Section */
 section figure {
-    display: inline-block;
-    text-align: center;
-    margin: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  margin: 0.5rem;
 }
 
 section figure img {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 4px;
-    display: block;
-    margin: 0 auto;
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
 }
 
 section figure figcaption {
-    margin-top: 0.5rem;
-    font-weight: bold;
+  margin-top: 0.5rem;
+  font-weight: bold;
 }
-
 
 /* Footer */
 footer {
-  background-color: var(--secondary-color); /* deep blue footer */
+  background-color: var(--secondary-color);
   color: white;
   padding: 1rem;
   text-align: center;
 }
 
-/* Social Media Links (centered) */
 footer .socialmedia {
   display: flex;
-  justify-content: center; /* centers the icons */
+  justify-content: center;
   gap: 1rem;
   margin-top: 0.5rem;
 }
 
 footer .socialmedia a {
-  text-decoration: none; /* removes underline */
+  text-decoration: none;
 }
 
 footer .socialmedia a img {
@@ -157,8 +155,8 @@ footer .socialmedia a img:hover {
   opacity: 0.8;
 }
 
-/* Buttons or other highlight elements */
+/* Buttons or highlight elements */
 button {
-  background-color: var(--highlight-color); /* subtle red */
+  background-color: var(--highlight-color);
   color: white;
 }
