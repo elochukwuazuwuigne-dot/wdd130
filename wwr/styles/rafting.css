@@ -1,4 +1,3 @@
-/* Universal Reset */
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +10,8 @@
   --accent-color: #f0a500;        /* orange accent */
   --background-color: #e0f7fa;    /* light blue background */
   --highlight-color: #ff6f61;     /* subtle red for highlights/buttons */
-  --secondary-color: #0288d1;     /* deep blue for header/footer */
-  --hero-text-color: #222222;     /* dark text for hero h1 */
+  --secondary-color: #02669c;     /* dark blue for header/footer (better contrast) */
+  --hero-text-color: #ffffff;      /* white text for hero for readability */
   --section-h2-color: #b35400;    /* darker orange for H2 contrast */
 }
 
@@ -26,7 +25,7 @@ body {
 
 /* Header */
 header {
-  background-color: #02669c; /* darker blue for better contrast */
+  background-color: var(--secondary-color);
   color: #ffffff;
   padding: 1rem;
   display: flex;
@@ -45,7 +44,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: #ffffff; /* ensure contrast */
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -104,7 +103,7 @@ section {
 
 section h2 {
   margin-bottom: 1rem;
-  color: var(--section-h2-color); /* improved contrast */
+  color: var(--section-h2-color);
 }
 
 /* Figures in Adventure Section */
@@ -131,7 +130,7 @@ section figure figcaption {
 /* Footer */
 footer {
   background-color: var(--secondary-color);
-  color: white;
+  color: #ffffff; /* ensure contrast */
   padding: 1rem;
   text-align: center;
 }
@@ -163,10 +162,9 @@ button {
   padding: 0.5rem 1rem;
   border: none;
   background-color: var(--highlight-color);
-  color: white;
+  color: #ffffff; /* ensures contrast */
 }
 
 button:hover {
   background-color: var(--accent-color);
 }
-
