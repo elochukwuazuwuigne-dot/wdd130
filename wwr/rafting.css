@@ -1,3 +1,4 @@
+/* Universal Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +7,13 @@
 
 /* CSS Variables */
 :root {
-  --primary-color: #333333;
-  --accent-color: #f0a500;
-  --background-color: #f0f0f0;
+  --primary-color: #333333;       /* main text / dark elements */
+  --accent-color: #f0a500;        /* orange accent */
+  --background-color: #e0f7fa;    /* light blue background */
+  --highlight-color: #ff6f61;     /* subtle red for highlights/buttons */
+  --secondary-color: #0288d1;     /* deep blue for header/footer */
+  --hero-text-color: #222222;     /* dark text for hero h1 */
+  --section-h2-color: #b35400;    /* darker orange for H2 contrast */
 }
 
 /* Body */
@@ -16,12 +21,13 @@ body {
   font-family: Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--primary-color);
+  line-height: 1.6;
 }
 
 /* Header */
 header {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: #02669c; /* darker blue for better contrast */
+  color: #ffffff;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -64,9 +70,9 @@ nav ul li a:hover {
   position: absolute;
   top: 20%;
   left: 10%;
-  color: #e0e0e0;
+  color: var(--hero-text-color);
   font-size: 3rem;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero article {
@@ -86,41 +92,81 @@ nav ul li a:hover {
 .hero article img {
   float: right;
   width: 100px;
-  height: auto;
+  height: 100px;
+  object-fit: cover;
   margin-left: 1rem;
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* subtle dark overlay */
+
+/* Sections */
+section {
+  padding: 2rem 10%;
 }
 
+section h2 {
+  margin-bottom: 1rem;
+  color: var(--section-h2-color); /* improved contrast */
+}
+
+/* Figures in Adventure Section */
+section figure {
+  display: inline-block;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+section figure img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+section figure figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
 
 /* Footer */
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
   padding: 1rem;
   text-align: center;
 }
 
-/* Social Media Links */
+footer .socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
 footer .socialmedia a {
-  text-decoration: none;  /* removes underline */
-  margin: 0 0.5rem;
+  text-decoration: none;
 }
 
 footer .socialmedia a img {
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
+  width: 40px;
+  height: 40px;
   transition: opacity 0.3s ease;
 }
 
 footer .socialmedia a img:hover {
-  opacity: 0.8; /* smooth hover effect */
+  opacity: 0.8;
 }
+
+/* Buttons or highlight elements */
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--highlight-color);
+  color: white;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
