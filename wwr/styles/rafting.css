@@ -12,6 +12,8 @@
   --background-color: #e0f7fa;    /* light blue background */
   --highlight-color: #ff6f61;     /* subtle red for highlights/shadows */
   --secondary-color: #0288d1;     /* deep blue for header/footer */
+  --hero-text-color: #222222;     /* dark text for hero h1 */
+  --section-h2-color: #cc6600;    /* darker orange for better contrast */
 }
 
 /* Body */
@@ -25,7 +27,7 @@ body {
 /* Header */
 header {
   background-color: var(--secondary-color);
-  color: white;
+  color: white; /* header contrast acceptable */
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -68,9 +70,9 @@ nav ul li a:hover {
   position: absolute;
   top: 20%;
   left: 10%;
-  color: white;
+  color: var(--hero-text-color); /* improved contrast */
   font-size: 3rem;
-  text-shadow: 3px 3px 5px var(--highlight-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero article {
@@ -102,7 +104,7 @@ section {
 
 section h2 {
   margin-bottom: 1rem;
-  color: var(--accent-color);
+  color: var(--section-h2-color); /* improved contrast */
 }
 
 /* Figures in Adventure Section */
@@ -163,7 +165,7 @@ button {
   background-color: var(--highlight-color);
   color: white;
 }
+
 button:hover {
   background-color: var(--accent-color);
 }
-  
