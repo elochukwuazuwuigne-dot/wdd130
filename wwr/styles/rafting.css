@@ -6,13 +6,13 @@
 
 /* CSS Variables */
 :root {
-  --primary-color: #333333;       /* main text / dark elements */
-  --accent-color: #f0a500;        /* orange accent */
-  --background-color: #e0f7fa;    /* light blue background */
-  --highlight-color: #ff6f61;     /* subtle red for highlights/buttons */
-  --secondary-color: #02669c;     /* dark blue for header/footer (better contrast) */
-  --hero-text-color: #ffffff;      /* white text for hero for readability */
-  --section-h2-color: #b35400;    /* darker orange for H2 contrast */
+  --primary-color: #333333;
+  --accent-color: #f0a500;
+  --background-color: #e0f7fa;
+  --highlight-color: #ff6f61;
+  --secondary-color: #02669c;
+  --hero-text-color: #1a1a1a;
+  --section-h2-color: #b35400;
 }
 
 /* Body */
@@ -44,7 +44,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #ffffff; /* ensure contrast */
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -71,7 +71,7 @@ nav ul li a:hover {
   left: 10%;
   color: var(--hero-text-color);
   font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
 }
 
 .hero article {
@@ -130,7 +130,7 @@ section figure figcaption {
 /* Footer */
 footer {
   background-color: var(--secondary-color);
-  color: #ffffff; /* ensure contrast */
+  color: #ffffff;
   padding: 1rem;
   text-align: center;
 }
@@ -162,7 +162,7 @@ button {
   padding: 0.5rem 1rem;
   border: none;
   background-color: var(--highlight-color);
-  color: #ffffff; /* ensures contrast */
+  color: #ffffff;
 }
 
 button:hover {
