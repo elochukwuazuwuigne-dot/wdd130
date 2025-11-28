@@ -9,7 +9,7 @@
     --primary-color: #333333;
     --accent-color: #f0a500;
     --background-color: #e0f7fa;
-    --highlight-color: #ff6f61;
+    --highlight-color: #e55045; /* Darker button for contrast */
     --secondary-color: #02669c;
     --hero-text-color: #1a1a1a;
     --section-h2-color: #b35400;
@@ -44,6 +44,16 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 nav ul li a:hover { color: var(--accent-color); }
+
+/* Main H1 styling */
+main h1 {
+    font-size: 2rem;        /* Adjust size as needed */
+    color: var(--secondary-color);  /* Matches header/nav color */
+    text-align: center;     /* Centered on the page */
+    margin-bottom: 1.5rem; /* Space between H1 and next section */
+    font-weight: bold;      /* Make it stand out */
+}
+
 
 /* Sections */
 section { padding: 2rem 10%; }
@@ -132,3 +142,22 @@ footer .socialmedia a img {
     transition: opacity 0.3s ease;
 }
 footer .socialmedia a img:hover { opacity: 0.8; }
+
+/* Contact Info + Map side-by-side */
+.contact-info-map {
+    display: flex;
+    flex-wrap: wrap;           /* Stack on smaller screens */
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.contact-info-map .contact-text {
+    flex: 1 1 250px;           /* Text takes minimum 250px, grows */
+}
+
+.contact-info-map iframe {
+    flex: 2 1 400px;           /* Map takes larger space */
+    border: none;              /* Optional: remove iframe border */
+    border-radius: 8px;
+}
+
