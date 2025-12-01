@@ -1,3 +1,107 @@
+/* -------------------- */
+/* ABOUT PAGE STYLING   */
+/* -------------------- */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Hero Title */
+.hero h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background-color: rgba(2, 102, 156, 0.7); /* translucent overlay */
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Hero Article */
+.hero article {
+    background-color: #ffffff;
+    margin: 1.5rem 10%;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero article img {
+    flex: 1 1 200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero article p {
+    flex: 2 1 300px;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+/* History and Adventure Sections */
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+/* Adventure Images Grid */
+section figure {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+section figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section figure img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section figure figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+
+
+
+
+
 /* Base */
 * {
     margin: 0;
@@ -9,7 +113,7 @@
     --primary-color: #333333;
     --accent-color: #f0a500;
     --background-color: #e0f7fa;
-    --highlight-color: #e55045; /* Darker button for contrast */
+    --highlight-color: #b33428; /* 🔧 Darker red for contrast (was #e55045) */
     --secondary-color: #02669c;
     --hero-text-color: #1a1a1a;
     --section-h2-color: #b35400;
@@ -45,15 +149,21 @@ nav ul li a {
 }
 nav ul li a:hover { color: var(--accent-color); }
 
-/* Main H1 styling */
-main h1 {
-    font-size: 2rem;        /* Adjust size as needed */
-    color: var(--secondary-color);  /* Matches header/nav color */
-    text-align: center;     /* Centered on the page */
-    margin-bottom: 1.5rem; /* Space between H1 and next section */
-    font-weight: bold;      /* Make it stand out */
+nav ul li a.active {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
+
+/* Main H1 styling */
+main h1 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
 
 /* Sections */
 section { padding: 2rem 10%; }
@@ -117,8 +227,13 @@ form button {
     margin: 0 auto;
     display: block;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
-form button:hover { background-color: var(--accent-color); }
+
+/* Hover contrast also passes */
+form button:hover {
+    background-color: #8e2a1f; /* 🔧 Slightly darker on hover */
+}
 
 /* Footer */
 footer {
@@ -146,18 +261,17 @@ footer .socialmedia a img:hover { opacity: 0.8; }
 /* Contact Info + Map side-by-side */
 .contact-info-map {
     display: flex;
-    flex-wrap: wrap;           /* Stack on smaller screens */
+    flex-wrap: wrap;
     gap: 1.5rem;
     align-items: flex-start;
 }
 
 .contact-info-map .contact-text {
-    flex: 1 1 250px;           /* Text takes minimum 250px, grows */
+    flex: 1 1 250px;
 }
 
 .contact-info-map iframe {
-    flex: 2 1 400px;           /* Map takes larger space */
-    border: none;              /* Optional: remove iframe border */
+    flex: 2 1 400px;
+    border: none;
     border-radius: 8px;
 }
-

@@ -20,29 +20,31 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li> <!-- Added optional active class -->
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Added H1 for Page Audit -->
+        <!-- H1 for SEO and page audit -->
         <h1>White Water Rafting Adventures – Contact Us</h1>
 
         <!-- Contact Info + Map -->
         <section class="contact-info-map">
             <div class="contact-text">
-                <p>Address: 123 River Way, Adventure City, USA</p>
-                <p>Phone: (123) 456-7890</p>
-                <p>Email: info@whitewateradventures.com</p>
+                <p><strong>Address:</strong> 123 River Way, Adventure City, USA</p>
+                <p><strong>Phone:</strong> <a href="tel:+11234567890">(123) 456-7890</a></p>
+                <p><strong>Email:</strong> <a
+                        href="mailto:info@whitewateradventures.com">info@whitewateradventures.com</a></p>
+
             </div>
 
+            <!-- FIXED: iframe must be self-contained (no inner content) -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086297303124!2d-122.41941508468108!3d37.77492977975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064a53e1f1d%3A0x45e0f5d90f3b746d!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                width="100%" height="300" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
-
 
         <!-- Employee Profiles -->
         <section>
@@ -94,18 +96,24 @@
                 <input type="email" id="email" name="email" required>
 
                 <p>Purpose of Message:</p>
-                <input type="radio" id="general" name="purpose" value="general" required>
-                <label for="general">General Inquiry</label>
-                <input type="radio" id="reservation" name="purpose" value="reservation">
-                <label for="reservation">Reservation Question</label>
-                <input type="radio" id="website" name="purpose" value="website">
-                <label for="website">Website Suggestion</label>
+                <div class="radio-group">
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label><br>
+
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label><br>
+
+                    <input type="radio" id="website" name="purpose" value="website">
+                    <label for="website">Website Suggestion</label>
+                </div>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                <div class="checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
 
                 <button type="submit">Send Message</button>
             </form>
