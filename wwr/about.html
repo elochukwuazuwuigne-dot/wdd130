@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | White Water Rafting Adventures</title>
+    <!-- FIX 1: Title should include "Contact Us" + company name -->
+    <title>Contact Us | White Water Rafting Adventures</title>
+
+    <!-- Description and author stay fine -->
     <meta name="description"
         content="Discover the story behind White Water Rafting Adventures, our mission, history, and team.">
     <meta name="author" content="Elochukwu Azuwuigne Kizito">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -26,17 +30,31 @@
         </nav>
     </header>
 
-
     <main>
         <div class="hero">
             <img src="images/banner.png" alt="Rafting Adventure">
-            <h1>Our Story</h1>
+            <!-- FIX 2: H1 should include the company name -->
+            <h1>About White Water Rafting Adventures</h1>
         </div>
 
-        <section>
-            <h2>History</h2>
-            <p>Founded in 2005, our company started with passionate river guides and has grown into a trusted rafting
-                company.</p>
+        <section class="history">
+            <h2>Our History</h2>
+            <p>
+                White Water Rafting Adventures began its journey in 2005 with a small group of passionate river guides
+                who
+                shared one dream — to help people discover the thrill and beauty of nature through rafting. What started
+                as a
+                local weekend hobby soon grew into one of the most trusted outdoor adventure companies in the region.
+            </p>
+            <p>
+                Over the years, we have expanded our routes, trained expert guides, and provided unforgettable
+                experiences to
+                thousands of families, friends, and adventure seekers. Our mission remains the same — to combine safety,
+                teamwork, and excitement to create memories that last a lifetime.
+            </p>
+
+            <!-- Responsive "Learn More" link -->
+            <a href="trips.html" class="learn-more">Learn More</a>
         </section>
 
         <section class="grid-content">
@@ -49,14 +67,36 @@
                 <p>We provide thrilling experiences on rivers nationwide.</p>
             </div>
         </section>
+
+        <!-- FIX 3: Add a valid form (required in main) -->
+        <section>
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <input type="text">
+
+                <p>Preferred Contact Method:</p>
+                <label><input type="radio" name="contact" id="email" value="email"> Email</label>
+                <label><input type="radio" name="contact" id="phone" value="phone"> Phone</label>
+                <label><input type="radio" name="contact" id="text" value="text"> Text</label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+                <label><input type="checkbox" id="updates" name="updates"> Subscribe to updates</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 White Water Rafting Adventures | Created by Elochukwu Azuwuigne Kizito</p>
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook Page"></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn Profile"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram Profile"></a>
         </nav>
     </footer>
 </body>
