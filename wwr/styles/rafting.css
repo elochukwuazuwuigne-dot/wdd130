@@ -1,3 +1,21 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #333333;
+    --accent-color: #f0a500;
+    --background-color: #e0f7fa;
+    --highlight-color: #b33428;
+    --secondary-color: #02669c;
+    --hero-text-color: #ffffff; /* ✅ now used */
+    --section-h2-color: #b35400;
+}
+
+
 /* -------------------- */
 /* ABOUT PAGE STYLING   */
 /* -------------------- */
@@ -22,8 +40,8 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
-    background-color: rgba(2, 102, 156, 0.7); /* translucent overlay */
+    color: var(--hero-text-color); /* ✅ use CSS variable */
+    background-color: rgba(2, 102, 156, 0.7);
     padding: 0.5rem 1.5rem;
     border-radius: 8px;
     font-size: 2.2rem;
@@ -31,32 +49,34 @@
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
-/* Hero Article */
+/* ✅ Hero Article */
 .hero article {
-    background-color: #ffffff;
-    margin: 1.5rem 10%;
-    padding: 1rem;
-    border-radius: 8px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255,255,255,0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 700px;
 }
 
 .hero article img {
-    flex: 1 1 200px;
-    width: 200px;
-    height: 200px;
+    float: right; /* ✅ overlay right */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .hero article p {
-    flex: 2 1 300px;
+    flex: 1;
     color: var(--primary-color);
     font-size: 1rem;
 }
+
 
 /* History and Adventure Sections */
 section h2 {
@@ -71,53 +91,36 @@ section p {
 }
 
 /* Adventure Images Grid */
-section figure {
+.adventure {
+    text-align: center;
+    padding: 2rem 10%;
+}
+
+.adventure figure {
     display: inline-block;
     margin: 1rem;
     text-align: center;
 }
 
-section figure img {
-    width: 200px;
-    height: 200px;
+.adventure figure img {
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section figure img:hover {
+.adventure figure img:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-section figure figcaption {
+.adventure figure figcaption {
     margin-top: 0.5rem;
     font-weight: bold;
     color: var(--secondary-color);
 }
 
-
-
-
-
-
-/* Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #333333;
-    --accent-color: #f0a500;
-    --background-color: #e0f7fa;
-    --highlight-color: #b33428; /* 🔧 Darker red for contrast (was #e55045) */
-    --secondary-color: #02669c;
-    --hero-text-color: #1a1a1a;
-    --section-h2-color: #b35400;
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -258,23 +261,11 @@ footer .socialmedia a img {
 }
 footer .socialmedia a img:hover { opacity: 0.8; }
 
-/* Contact Info + Map side-by-side */
-.contact-info-map {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: flex-start;
+footer .socialmedia a {
+    text-decoration: none; /* ✅ remove underline */
 }
 
-.contact-info-map .contact-text {
-    flex: 1 1 250px;
-}
 
-.contact-info-map iframe {
-    flex: 2 1 400px;
-    border: none;
-    border-radius: 8px;
-}
 
 /* -------------------- */
 /* HOME PAGE STYLING    */
