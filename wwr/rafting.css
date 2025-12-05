@@ -475,3 +475,40 @@ form button:hover {
         height: 150px;
     }
 }
+
+
+.history {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.history p {
+  max-width: 700px;
+  margin: 0 auto 1rem auto;
+  line-height: 1.6;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .learn-more {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
