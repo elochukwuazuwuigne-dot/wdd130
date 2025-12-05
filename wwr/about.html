@@ -4,14 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FIX 1: Title should include "Contact Us" + company name -->
     <title>Contact Us | White Water Rafting Adventures</title>
-
-    <!-- Description and author stay fine -->
     <meta name="description"
         content="Discover the story behind White Water Rafting Adventures, our mission, history, and team.">
     <meta name="author" content="Elochukwu Azuwuigne Kizito">
-
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -33,7 +29,6 @@
     <main>
         <div class="hero">
             <img src="images/banner.png" alt="Rafting Adventure">
-            <!-- FIX 2: H1 should include the company name -->
             <h1>About White Water Rafting Adventures</h1>
         </div>
 
@@ -41,9 +36,8 @@
             <h2>Our History</h2>
             <p>
                 White Water Rafting Adventures began its journey in 2005 with a small group of passionate river guides
-                who
-                shared one dream — to help people discover the thrill and beauty of nature through rafting. What started
-                as a
+                who shared one dream — to help people discover the thrill and beauty of nature through rafting. What
+                started as a
                 local weekend hobby soon grew into one of the most trusted outdoor adventure companies in the region.
             </p>
             <p>
@@ -53,7 +47,6 @@
                 teamwork, and excitement to create memories that last a lifetime.
             </p>
 
-            <!-- Responsive "Learn More" link -->
             <a href="trips.html" class="learn-more">Learn More</a>
         </section>
 
@@ -68,23 +61,26 @@
             </div>
         </section>
 
-        <!-- FIX 3: Add a valid form (required in main) -->
-        <section>
+        <!-- ✅ One single form with name, email, and inquiry fields -->
+        <section class="contact-section">
             <h2>Contact Us</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" class="contact-form">
+
                 <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <input type="text">
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
                 <p>Preferred Contact Method:</p>
-                <label><input type="radio" name="contact" id="email" value="email"> Email</label>
-                <label><input type="radio" name="contact" id="phone" value="phone"> Phone</label>
-                <label><input type="radio" name="contact" id="text" value="text"> Text</label>
+                <label><input type="radio" name="contact" value="email"> Email</label>
+                <label><input type="radio" name="contact" value="phone"> Phone</label>
+                <label><input type="radio" name="contact" value="text"> Text</label>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                <label for="message">Your Inquiry:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your question here..."></textarea>
 
-                <label><input type="checkbox" id="updates" name="updates"> Subscribe to updates</label>
+                <label><input type="checkbox" id="updates" name="updates"> Subscribe to our newsletter</label>
 
                 <button type="submit">Send Message</button>
             </form>
