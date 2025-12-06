@@ -53,7 +53,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #e0f7fa; /* brighter for contrast */
+    color: #f5fbff; /* brighter text for stronger contrast */
     font-weight: bold;
     position: relative;
     transition: color 0.3s ease;
@@ -95,9 +95,9 @@ nav a.active::after {
     position: absolute;
     top: 10%;
     left: 5%;
-    color: var(--hero-text-color);
+    color: #f8f8f8; /* slightly darker white for better contrast */
     font-size: 2.5rem;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* Founder image & text inside hero */
@@ -149,7 +149,7 @@ section h2 {
 }
 
 .adventure-gallery figure {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0.5rem;
     text-align: center;
     border-radius: 8px;
@@ -173,7 +173,7 @@ section h2 {
 footer {
     position: relative;
     background-color: var(--secondary-color);
-    color: #fff;
+    color: #ffffff;
     padding: 1rem;
     margin-top: 2rem;
     border-top: 2px solid var(--accent-color);
