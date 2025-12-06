@@ -13,7 +13,6 @@
     --accent-color: #f0a500;
     --background-color: #e0f7fa;
     --secondary-color: #02669c;
-    --hero-text-color: #ffffff;
     --section-h2-color: #b35400;
 }
 
@@ -53,7 +52,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #f5fbff; /* brighter text for stronger contrast */
+    color: #f5f5f5; /* adjusted for better contrast */
     font-weight: bold;
     position: relative;
     transition: color 0.3s ease;
@@ -95,9 +94,9 @@ nav a.active::after {
     position: absolute;
     top: 10%;
     left: 5%;
-    color: #f8f8f8; /* slightly darker white for better contrast */
+    color: #f8f8f8; /* adjusted slightly for contrast */
     font-size: 2.5rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
 }
 
 /* Founder image & text inside hero */
@@ -149,7 +148,7 @@ section h2 {
 }
 
 .adventure-gallery figure {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 0.5rem;
     text-align: center;
     border-radius: 8px;
@@ -173,7 +172,7 @@ section h2 {
 footer {
     position: relative;
     background-color: var(--secondary-color);
-    color: #ffffff;
+    color: #fff;
     padding: 1rem;
     margin-top: 2rem;
     border-top: 2px solid var(--accent-color);
@@ -204,7 +203,6 @@ footer p {
 .socialmedia img {
     height: 30px;
 }
-
 
 /* --------------------- Contact.html ----------------------------- */
 
