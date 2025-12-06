@@ -6,93 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips | White Water Rafting Adventures</title>
     <meta name="description"
-        content="Explore the rafting trips offered by White Water Rafting Adventures, including photos, details, and pricing.">
+        content="Explore our thrilling white water rafting trips. Detailed information, photos, and schedules for all adventures.">
     <meta name="author" content="Elochukwu Azuwuigne Kizito">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+    <!-- Header and Navigation -->
     <header>
-        <a href="index.html">
-            <img src="images/logo.png" alt="White Water Rafting Logo">
-        </a>
+        <a href="index.html"><img src="images/logo.png" alt="White Water Rafting Logo"></a>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html" class="active">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
-
+    <!-- Main Content -->
     <main>
         <h1>Our Rafting Trips</h1>
 
-        <section class="trip-details">
-            <div class="trip_img">
-                <article>
-                    <img src="images/adventure1.jpg" alt="Los Dientes del Diablo">
-                    <h2>Los Dientes del Diablo</h2>
-                    <p>Challenging rapids for thrill seekers. Duration: 3 hours.</p>
-                </article>
-                <article>
-                    <img src="images/adventure2.jpg" alt="Big Mallard">
-                    <h2>Big Mallard</h2>
-                    <p>Beginner-friendly rapids. Duration: 2 hours.</p>
-                </article>
-                <article>
-                    <img src="images/adventure3.jpg" alt="Half Day Adventure">
-                    <h2>Half Day Adventure</h2>
-                    <p>Exciting short trip. Duration: 4 hours.</p>
-                </article>
+        <!-- Call to Action -->
+        <div class="cta-contact">
+            <p>Ready to start your adventure? <a href="contact.html" class="cta-button">Contact Us Today!</a></p>
+        </div>
+
+        <!-- Trips Grid -->
+        <section class="trips-grid">
+            <!-- Trip 1 -->
+            <div class="trip">
+                <h2>Beginner Rapids</h2>
+                <div class="trip-images">
+                    <img src="images/adventure2.jpg" alt="Beginner Rapids 1">
+                    <img src="images/adventure1.jpg" alt="Beginner Rapids 2">
+                </div>
+                <p>Perfect for first-time rafters, this trip offers gentle rapids and scenic river views. A safe and
+                    exciting
+                    introduction to white water rafting.</p>
             </div>
-        </section>
 
-        <section>
-            <h2>Trip Summary Table</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trip</th>
-                        <th>Duration</th>
-                        <th>Difficulty</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Los Dientes del Diablo</td>
-                        <td>3 hrs</td>
-                        <td>Hard</td>
-                        <td>$150</td>
-                    </tr>
-                    <tr>
-                        <td>Big Mallard</td>
-                        <td>2 hrs</td>
-                        <td>Easy</td>
-                        <td>$90</td>
-                    </tr>
-                    <tr>
-                        <td>Half Day Adventure</td>
-                        <td>4 hrs</td>
-                        <td>Medium</td>
-                        <td>$120</td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- Trips Grid -->
+            <section class="trips-grid">
+                <!-- Trip 1 -->
+                <div class="trip">
+                    <h2>Beginner Rapids</h2>
+                    <div class="trip-images">
+                        <img src="images/adventure2.jpg" alt="Beginner Rapids 1">
+                        <img src="images/adventure1.jpg" alt="Beginner Rapids 2">
+                    </div>
+                    <p>Perfect for first-time rafters, this trip offers gentle rapids and scenic river views. A safe and
+                        exciting
+                        introduction to white water rafting.</p>
+                    <ul class="trip-highlights">
+                        <li>🌊 Gentle Rapids</li>
+                        <li>👨‍👩‍👧 Family Friendly</li>
+                        <li>🌄 Scenic Views</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button-mini">Book This Trip</a>
+                </div>
 
-            <a href="contact.html" class="cta-button">Contact Us for Reservations</a>
-        </section>
+                <!-- Trip 2 -->
+                <div class="trip">
+                    <h2>Intermediate Rapids</h2>
+                    <div class="trip-images">
+                        <img src="images/whiriver.jpg" alt="Intermediate Rapids 1">
+                        <img src="images/adventure4.jpg" alt="Intermediate Rapids 2">
+                    </div>
+                    <p>For those with some experience, this trip includes moderate rapids and longer river stretches for
+                        a thrilling
+                        adventure.</p>
+                    <ul class="trip-highlights">
+                        <li>💦 Moderate Rapids</li>
+                        <li>🏞️ Longer Adventure</li>
+                        <li>🛶 Guided Safety</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button-mini">Book This Trip</a>
+                </div>
+
+                <!-- Trip 3 -->
+                <div class="trip">
+                    <h2>Advanced Rapids</h2>
+                    <div class="trip-images">
+                        <img src="images/adventure3.jpg" alt="Advanced Rapids 1">
+                        <img src="images/adventure5.jpg" alt="Advanced Rapids 2">
+                    </div>
+                    <p>Designed for thrill-seekers, this trip tackles challenging rapids and fast-flowing waters, guided
+                        by our
+                        expert team.</p>
+                    <ul class="trip-highlights">
+                        <li>⚡ Challenging Rapids</li>
+                        <li>🏔️ Extreme Adventure</li>
+                        <li>🔥 Adrenaline Rush</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button-mini">Book This Trip</a>
+                </div>
+            </section>
+
+
+
+
+            <!-- Trip Table -->
+            <section class="trip-table">
+                <h2>Trip Summary</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Difficulty</th>
+                            <th>Duration</th>
+                            <th>Age Requirement</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beginner Rapids</td>
+                            <td>Easy</td>
+                            <td>2 hours</td>
+                            <td>8+</td>
+                            <td>$50</td>
+                        </tr>
+                        <tr>
+                            <td>Intermediate Rapids</td>
+                            <td>Moderate</td>
+                            <td>3 hours</td>
+                            <td>12+</td>
+                            <td>$75</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Rapids</td>
+                            <td>Challenging</td>
+                            <td>4 hours</td>
+                            <td>15+</td>
+                            <td>$100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 White Water Rafting Adventures | Created by Elochukwu Azuwuigne Kizito</p>
+        <p>© 2025 White Water Rafting Adventures | Created 🙌 by Elochukwu 😁 Azuwuigne ❤️Kizito 💕</p>
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook Page"></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn Profile"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram Profile"></a>
         </nav>
     </footer>
 </body>
