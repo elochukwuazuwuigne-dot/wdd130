@@ -75,6 +75,9 @@ nav a.active::after {
     border-radius: 2px;
 }
 
+/* ------------------------------- 
+About.html 
+---------------------------------- */
 /* Hero Section */
 .hero {
     position: relative;
@@ -207,9 +210,131 @@ footer p {
 /* --------------------- Contact.html ----------------------------- */
 
 
+/* -------------------- */
+/* CONTACT PAGE STYLING */
+/* -------------------- */
+
+      /* Contact Info & Map */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+            width: 94%;
+            margin: 2rem auto;
+            align-items: flex-start;
+        }
+
+        .contact-info {
+            flex: 1 1 300px;
+        }
+
+        .contact-map {
+            flex: 1 1 400px;
+            height: 250px;
+            border-radius: 8px;
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Employee Section */
+        .employee-gallery {
+            width: 94%;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .employee-gallery h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .employee-gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.employee-gallery figure {
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+        .employee-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%; /* makes images perfectly circular */
+}
+
+
+        /* Contact Form */
+        .contact-form {
+            width: 94%;
+            margin: 2rem auto;
+            background-color: #fff;
+            padding: 1rem; /* reduced padding */
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.6rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .contact-form input[type="checkbox"] {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+
+        .contact-form button {
+            float: right; /* button floats right */
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #d18e00;
+        }
 
 
 
 
+/* --------------------------------
+Index.html
+----------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------
+Trip.html
+----------------------------------- */
 
 
