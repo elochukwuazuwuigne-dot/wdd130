@@ -35,40 +35,40 @@ header {
     border-bottom: 2px solid var(--accent-color);
     padding: 1rem 3%;
     width: 94%;
-    margin: 1rem auto; /* adds top and bottom space */
-    border-radius: 12px; /* rounds both top and bottom */
+    margin: 1rem auto;
+    border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header img {
     height: 60px;
-    margin-right: 1rem; /* keeps space between logo and nav */
+    margin-right: 1rem;
 }
 
 /* Navigation */
 nav {
     display: flex;
-    gap: 1.5rem; /* spacing between links */
+    gap: 1.5rem;
 }
 
 nav a {
     text-decoration: none;
-    color: #add8e6; /* light blue */
+    color: #e0f7fa; /* brighter for contrast */
     font-weight: bold;
     position: relative;
     transition: color 0.3s ease;
 }
 
-/* Hover and Active Dash Underline */
 nav a:hover,
 nav a.active {
-    color: orange;
+    color: #ffd966; /* gold for active or hover */
 }
 
+/* Active underline */
 nav a.active::after {
     content: "";
     position: absolute;
-    bottom: -5px; /* space below text */
+    bottom: -5px;
     left: 0;
     width: 100%;
     height: 3px;
@@ -97,7 +97,7 @@ nav a.active::after {
     left: 5%;
     color: var(--hero-text-color);
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* Founder image & text inside hero */
@@ -108,15 +108,16 @@ nav a.active::after {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     border-radius: 10px;
-    width: 300px;
+    width: 350px;
 }
 
 .hero article img {
-    width: 100%;
+    width: 50%;
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem 1rem;
+    float: right;
 }
 
 /* Section Titles */
@@ -155,7 +156,6 @@ section h2 {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Force same image size */
 .adventure-gallery img {
     width: 100%;
     height: 200px;
@@ -188,7 +188,7 @@ footer p {
     margin-bottom: 1rem;
 }
 
-/* Social media icons float right */
+/* Social media icons */
 .socialmedia {
     position: absolute;
     top: 50%;
@@ -198,6 +198,7 @@ footer p {
 
 .socialmedia a {
     margin-left: 0.5rem;
+    text-decoration: none;
 }
 
 .socialmedia img {
